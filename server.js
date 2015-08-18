@@ -30,7 +30,7 @@ if(service) console.log("server started - http://localhost:" + server.port);
 function request_page(url, callback){
 
 	var page = new WebPage();
-	page.clipRect = { top: 0, left: 0, width: 700, height: 400 };
+	//page.clipRect = { top: 0, left: 0, width: 700, height: 400 };
 	page.viewportSize = { width: 700, height: 400 };
 
 	page.onLoadStarted = function () {
