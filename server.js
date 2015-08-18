@@ -42,17 +42,20 @@ function request_page(url, callback){
 		console.log('loaded:' + url);
 
 		var properties = {};
+		var content = page.content;
 
 		properties.title = page.evaluate(function () {
 			return document.title
 		});
 
 		properties.snap = page.evaluate(function () {
-			return page.content
+			var content = page.content;
+			return content
 		});
 		
 		properties.snap2 = page.evaluate(function () {
-			return document.content
+			var content = document.content;
+			return content
 		});
 
 		properties.links = page.evaluate(function () {
