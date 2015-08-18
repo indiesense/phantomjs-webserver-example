@@ -49,13 +49,7 @@ function request_page(url, callback){
 		});
 
 		properties.snap = page.evaluate(function () {
-			var content = page.content;
-			return content
-		});
-		
-		properties.snap2 = page.evaluate(function () {
-			var content = document.content;
-			return content
+			return document.documentElement.outerHTML
 		});
 
 		properties.links = page.evaluate(function () {
