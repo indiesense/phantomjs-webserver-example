@@ -46,7 +46,7 @@
 			{{/if}}
 		</div>
 		<hr />
-		prettyPrint();
+
 	</script>
 
 	
@@ -64,7 +64,7 @@
 			e.preventDefault();
 			var $form = $(this);
 			var params = $form.serializeArray();
-
+			prettyPrint();
 			var data = {params:params};
 			var $el = $('<div>').insertAfter($form);
 			$el.html(template(data));
