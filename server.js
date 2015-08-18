@@ -91,6 +91,6 @@ function request_page(url, callback){
 			page.close();
 		},100)
 	};
-prettyPrint();
+
 	page.open(url);
 }
