@@ -30,7 +30,11 @@
 
 		<div class="meta">
 			{{#if meta}}
-				<h2>title: {{meta.title}}</h2>
+				<h2>Title Tag: {{meta.title}}</h2>
+								<h3> Snapshotted HTML Sourcecode
+				<textarea cols="70" rows="20">
+{{meta.snap}}
+</textarea>
 				<ul>
 					{{#each meta.links}}
 					<li>
@@ -38,10 +42,7 @@
 					</li>
 					{{/each}}
 				</ul>
-				<h3> Snapshotted HTML Sourcecode
-				<textarea cols="70" rows="20">
-{{meta.snap}}
-</textarea>
+
 				<div class="pie-chart"></div>
 
 			{{/if}}
