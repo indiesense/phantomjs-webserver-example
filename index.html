@@ -27,7 +27,7 @@
 			<img src="{{imgsrc}}" />
 
 		{{/if}}
-			<pre><code class="html" data-language="html">{{meta.snap}}</code></pre>
+			//<pre><code class="html" data-language="html">{{meta.snap}}</code></pre>
 		<div class="meta">
 			{{#if meta}}
 				<h2>title: {{meta.title}}</h2>
@@ -42,8 +42,11 @@
 			
 			{{/if}}
 		</div>
+		<textarea cols="50" rows="5">
+{{meta.snap}}
+</textarea>
 		<hr />
-<input type="text" placeholder={{meta.snap}} >
+
 	</script>
 
 	
