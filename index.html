@@ -25,6 +25,7 @@
 
 		{{#if imgsrc}}
 			<img src="{{imgsrc}}" />
+			<pre><code class="html" data-language="html">{{meta.snap}}</code></pre>
 		{{/if}}
 
 		<div class="meta">
@@ -38,11 +39,7 @@
 					{{/each}}
 				</ul>
 				<div class="pie-chart"></div>
-				<h2> Title: {{meta.title}}</h2>
-				<h2> Testing </h2>
-				{{prettify}}
-				<pre><code class="html" data-language="html">{{meta.snap}}</code></pre>
-				
+			
 			{{/if}}
 		</div>
 		<hr />
