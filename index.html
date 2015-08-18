@@ -68,7 +68,7 @@
 			var data = {params:params};
 			var $el = $('<div>').insertAfter($form);
 			$el.html(template(data));
-			prettyPrint();
+			//prettyPrint();
 			$.post('', params)
 			.then(function(response){
 
