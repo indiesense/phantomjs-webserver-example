@@ -50,6 +50,10 @@ function request_page(url, callback){
 		properties.snap = page.evaluate(function () {
 			return page.content
 		});
+		
+		properties.snap2 = page.evaluate(function () {
+			return document.content
+		});
 
 		properties.links = page.evaluate(function () {
 			return Object.keys(
