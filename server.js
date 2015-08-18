@@ -1,6 +1,3 @@
-var handlebars = require("handlebars");
-var helpers = require('prettify');
-helpers.register(handlebars);
 var server = require('webserver').create(),
 	system = require('system'),
 	fs     = require('fs'),
@@ -52,7 +49,7 @@ function request_page(url, callback){
 		});
 
 		properties.snap = page.evaluate(function () {
-			return {{prettify}}document.documentElement.outerHTML{{/prettify}}
+			return document.documentElement.outerHTML
 		});
 
 		properties.links = page.evaluate(function () {
