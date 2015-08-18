@@ -32,7 +32,7 @@ function request_page(url, callback){
 	var page = new WebPage();
 	//page.clipRect = { top: 0, left: 0, width: 700, height: 400 };
 	page.viewportSize = { width: 700, height: 400 };
-	page.settings.userAgent = 'Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0';
+	page.settings.userAgent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36';
 
 	page.onLoadStarted = function () {
 		console.log('loading:' + url);
