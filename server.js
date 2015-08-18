@@ -46,6 +46,9 @@ function request_page(url, callback){
 		properties.title = page.evaluate(function () {
 			return document.title
 		});
+				properties.title = page.evaluate(function () {
+			return document.title
+		});
 
 		properties.links = page.evaluate(function () {
 			return Object.keys(
